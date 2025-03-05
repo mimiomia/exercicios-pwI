@@ -1,5 +1,3 @@
-<!-- Enunciado: Reproduza o arquivo md em html -->
-
 # 🚀 O Futuro do Desenvolvimento Web
 
 O desenvolvimento web está em constante evolução, trazendo novas tecnologias e desafios. Criar um site moderno envolve conhecer diferentes linguagens e práticas recomendadas.
