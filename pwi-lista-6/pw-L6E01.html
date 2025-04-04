@@ -6,19 +6,19 @@
   <title>Portfolio - Marcelly Pereira</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/WinJS/4.4.1/css/ui-dark.css" />
   <style>
-    /* Personalização das janelas e do fundo */
+    
     body {
       margin: 0;
       padding: 0;
       font-family: 'Tahoma', sans-serif;
-      background-color: #008080; /* Cor de fundo que remete ao Windows XP */
+      background-color: #008080; 
       color: black;
     }
 
     #desktop {
       width: 100vw;
       height: 100vh;
-      background-image: url('assets/xp-wallpaper.jpg'); /* Coloque seu wallpaper do Windows XP aqui */
+      background-image: url('assets/xp-wallpaper.jpg');
       background-size: cover;
       position: relative;
     }
@@ -44,7 +44,7 @@
       font-size: 14px;
     }
 
-    /* Janelas padrão */
+  
     .window {
       position: absolute;
       width: 300px;
@@ -132,14 +132,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/WinJS/4.4.1/js/base.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/WinJS/4.4.1/js/ui.js"></script>
   <script>
-    // Exemplo de função para mover janelas
+    // Pra mexer as janelinhas
     document.querySelectorAll('.window').forEach(windowElement => {
       const closeButton = windowElement.querySelector('.close-btn');
       closeButton.addEventListener('click', () => {
         windowElement.style.display = 'none';
       });
 
-      // mover a janela
+    
       const header = windowElement.querySelector('.window-header');
       header.style.cursor = 'move';
       header.addEventListener('mousedown', (e) => {
