@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsy - Login</title>
+    <link rel="stylesheet" href="/pwI-lista-8/craftsy/css/main.css">
+    
+    <style>
+        .login-main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+           
+            min-height: 100vh; 
+            padding: var(--spacing-large) 0; 
+        }
+
+        .login-form-container {
+            background-color: var(--text-color-light); 
+            padding: var(--spacing-large);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: var(--form-width); 
+            text-align: center; 
+        }
+
+        .form-title {
+            font-size: 1.8rem; 
+            color: var(--primary-orange);
+            margin-bottom: var(--spacing-large);
+        }
+
+        .login-form .form-group {
+            margin-bottom: var(--spacing-medium);
+            text-align: left; 
+        }
+
+        .login-form label {
+            display: block; 
+            font-weight: bold;
+            margin-bottom: var(--spacing-small);
+        }
+
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: calc(100% - var(--spacing-medium)); /* 100% menos o padding */
+            padding: var(--spacing-small);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-top: -var(--spacing-small); 
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: var(--spacing-small);
+        }
+
+        .error-message {
+            color: #dc3545; 
+            font-size: 0.9rem;
+            margin-top: var(--spacing-small);
+            margin-bottom: var(--spacing-medium);
+            text-align: center;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--primary-orange); 
+            padding: var(--spacing-medium);
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background-color: rgba(255, 102, 0, 0.8); 
+        }
+
+        
+        @media screen and (max-width: 480px) {
+            .login-form-container {
+                padding: var(--spacing-medium);
+                margin: var(--spacing-medium); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/images/craftsy-logo.png" alt="Craftsy Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">SMARTPHONES</a></li>
+                    <li><a href="#">TABLETS</a></li>
+                    <li><a href="#">COMPUTADORES</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">LOGIN</a>
+                <a href="register.html" class="btn register-btn">REGISTRAR</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="login-main-content">
+        <div class="container">
+            <section class="login-form-container">
+                <h1 class="form-title">BEM-VINDO</h1>
+                <form action="#" method="POST" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="senha" required>
+                    </div>
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Lembrar de mim</label>
+                    </div>
+                    <p class="error-message">A combinação de email e senha não é válida.</p>
+                    <button type="submit" class="btn submit-btn">Entrar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Craftsy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

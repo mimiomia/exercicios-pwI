@@ -1,0 +1,140 @@
+.home-main-content {
+    padding: var(--spacing-large) 0; 
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: repeat(2, var(--product-box-width)) 1fr;
+    gap: var(--spacing-medium);
+}
+
+.products-tutorials {
+    grid-column: span 2; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: var(--spacing-medium); 
+}
+
+.section-title {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    color: var(--primary-orange); 
+}
+
+.product-box {
+    background-color: var(--text-color-light);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-small);
+}
+
+.product-title {
+    font-size: 1.5rem; 
+    margin-top: 0;
+    margin-bottom: var(--spacing-small);
+    color: var(--text-color-dark);
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: var(--spacing-medium);
+}
+
+.view-more {
+    background-color: var(--primary-orange); 
+    color: var(--text-color-light);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    grid-column: 3 / 4; 
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium); 
+
+.tutorials-sidebar, .advertising {
+    background-color: var(--text-color-light);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-medium);
+    border-radius: 8px;
+}
+
+.tutorials-sidebar h3, .advertising h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: var(--spacing-medium);
+    color: var(--primary-orange); 
+}
+
+.tutorial-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-small);
+}
+
+.tutorial-item img {
+    width: 60px; 
+    height: 60px;
+    object-fit: cover;
+    margin-right: var(--spacing-small);
+    border-radius: 4px;
+}
+
+.tutorial-item p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.ad-unit img {
+    width: var(--ad-width); 
+    height: var(--ad-height); 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+@media screen and (max-width: 1190px) { 
+    .container {
+        padding: 0 var(--spacing-small); 
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .main-layout {
+        grid-template-columns: 1fr; 
+    }
+
+    .products-tutorials {
+        grid-column: span 1; 
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        grid-column: span 1; 
+    }
+
+    .main-nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .main-nav ul li {
+        margin: var(--spacing-small) 0;
+    }
+    .header-content {
+        flex-direction: column; 
+    }
+    .auth-buttons {
+        margin-top: var(--spacing-small);
+    }
+  }   
+}

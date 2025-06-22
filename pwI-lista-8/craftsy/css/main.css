@@ -1,0 +1,120 @@
+
+:root {
+    --primary-orange: #FF6600; 
+    --background-blue-light: #B2EBF2; 
+    --text-color-dark: #333;
+    --text-color-light: #fff;
+    --border-color: #ddd;
+    --button-bg-color: #007bff; 
+    --button-text-color: #fff;
+    --spacing-small: 10px; 
+    --spacing-medium: 20px; 
+    --spacing-large: 40px;
+    --max-content-width: 1140px; 
+    --product-box-width: 380px; 
+    --form-width: 350px; 
+    --ad-width: 300px; 
+    --ad-height: 250px; 
+
+   
+    --font-family-base: 'Arial', sans-serif; 
+    --font-family-headings: 'Helvetica Neue', sans-serif; 
+}
+
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-color-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--background-blue-light);
+    
+    background-image: url('/pwI-lista-8/craftsy/assets/bg-2.png'); 
+    background-repeat: repeat;
+}
+
+/* Container centralizador */
+.container {
+    max-width: var(--max-content-width); /* 1140px  */
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium); /* 20px de padding nas laterais para telas menores */
+}
+
+/* Estilos dos botões genéricos (Login, Registrar, Ver Mais) */
+.btn {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    text-decoration: none;
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darken(var(--button-bg-color), 10%); /* Necessita de um pré-processador ou cor mais escura manual */
+}
+
+/* --- Cabeçalho (Header) --- */
+.main-header {
+    background-color: var(--primary-orange);
+    padding: var(--spacing-small) 0; /* 10px de padding superior/inferior  */
+    color: var(--text-color-light);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .logo img {
+    height: 40px; 
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: var(--spacing-medium); 
+}
+
+.main-nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: bold;
+    padding: var(--spacing-small);
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.auth-buttons .btn {
+    background-color: transparent;
+    border: 2px solid var(--text-color-light);
+    margin-left: var(--spacing-small);
+}
+
+.auth-buttons .btn:hover {
+    background-color: var(--text-color-light);
+    color: var(--primary-orange);
+}
+
+
+.main-footer {
+    background-color: var(--text-color-dark); 
+    color: var(--text-color-light);
+    text-align: center;
+    padding: var(--spacing-medium) 0;
+    margin-top: var(--spacing-large);
+}
